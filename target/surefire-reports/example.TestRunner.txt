@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: example.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.073 s <<< FAILURE! - in example.TestRunner
+testParallel  Time elapsed: 3.067 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+http call failed after 486 milliseconds for url: http://localhost:3100/graphql
+classpath:example/searchHECourses.feature:35
+http call failed after 3 milliseconds for url: http://localhost:3100/graphql
+classpath:example/searchHECourses.feature:35
+http call failed after 2 milliseconds for url: http://localhost:3100/graphql
+classpath:example/searchHECourses.feature:73
+http call failed after 2 milliseconds for url: http://localhost:3100/graphql
+classpath:example/searchHECourses.feature:108 ==> expected: <0> but was: <4>
+	at example.TestRunner.testParallel(TestRunner.java:17)
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"example\/searchHECourses[1:6]","start":1677262688229,"end":1677262689633,"title":"example\/searchHECourses[1:6] 15:18:08.229-15:18:09.633 Verify the searchHeCourses query","className":"failed"},{"id":2,"group":1,"content":"example\/searchHECourses[2:39]","start":1677262689644,"end":1677262690301,"title":"example\/searchHECourses[2:39] 15:18:09.644-15:18:10.301 Authorization testing","className":"failed"},{"id":3,"group":1,"content":"example\/searchHECourses[3:74]","start":1677262690309,"end":1677262690942,"title":"example\/searchHECourses[3:74] 15:18:10.309-15:18:10.942 Performance testing","className":"failed"},{"id":4,"group":1,"content":"example\/searchHSCourses[1:6]","start":1677262691652,"end":1677262691917,"title":"example\/searchHSCourses[1:6] 15:18:11.652-15:18:11.917 Verify the searchHSCourses query"},{"id":5,"group":1,"content":"example\/searchHSCourses[2:48]","start":1677262691924,"end":1677262691952,"title":"example\/searchHSCourses[2:48] 15:18:11.924-15:18:11.952 Authorization testing"},{"id":6,"group":1,"content":"example\/searchHSCourses[3:90]","start":1677262691958,"end":1677262692007,"title":"example\/searchHSCourses[3:90] 15:18:11.958-15:18:12.007 Performance testing"},{"id":7,"group":1,"content":"example\/searchInsurance[1:7]","start":1677262692231,"end":1677262693044,"title":"example\/searchInsurance[1:7] 15:18:12.231-15:18:13.044 Verify the searchInsurance query"},{"id":8,"group":1,"content":"example\/searchInsurance[2:40]","start":1677262693049,"end":1677262693070,"title":"example\/searchInsurance[2:40] 15:18:13.049-15:18:13.070 Authorization testing"},{"id":9,"group":1,"content":"example\/searchInsurance[3:74]","start":1677262693075,"end":1677262693095,"title":"example\/searchInsurance[3:74] 15:18:13.075-15:18:13.095 Performance testing"},{"id":10,"group":1,"content":"example\/searchJuniorCourses[1:6]","start":1677262693263,"end":1677262693763,"title":"example\/searchJuniorCourses[1:6] 15:18:13.263-15:18:13.763 Verify the searchHeCourses query"},{"id":11,"group":1,"content":"example\/searchJuniorCourses[2:42]","start":1677262693767,"end":1677262693787,"title":"example\/searchJuniorCourses[2:42] 15:18:13.767-15:18:13.787 Authorization testing"},{"id":12,"group":1,"content":"example\/searchJuniorCourses[3:79]","start":1677262693791,"end":1677262693819,"title":"example\/searchJuniorCourses[3:79] 15:18:13.791-15:18:13.819 Performance testing"},{"id":13,"group":1,"content":"example\/searchLanguageCourses[1:3]","start":1677262693989,"end":1677262694050,"title":"example\/searchLanguageCourses[1:3] 15:18:13.989-15:18:14.050 Verify the searchLanguageCourses query"},{"id":14,"group":1,"content":"example\/searchLanguageCourses[2:41]","start":1677262694053,"end":1677262694075,"title":"example\/searchLanguageCourses[2:41] 15:18:14.053-15:18:14.075 Authorization testing"},{"id":15,"group":1,"content":"example\/searchLanguageCourses[3:81]","start":1677262694079,"end":1677262694113,"title":"example\/searchLanguageCourses[3:81] 15:18:14.079-15:18:14.113 Performance testing"},{"id":16,"group":1,"content":"example\/userSearchDefaultSettings[1:6]","start":1677262694210,"end":1677262694294,"title":"example\/userSearchDefaultSettings[1:6] 15:18:14.210-15:18:14.294 Verify the userSearchDefaultSettings query"},{"id":17,"group":1,"content":"example\/userSearchDefaultSettings[2:42]","start":1677262694298,"end":1677262694335,"title":"example\/userSearchDefaultSettings[2:42] 15:18:14.298-15:18:14.335 Authorization testing"},{"id":18,"group":1,"content":"example\/userSearchDefaultSettings[3:78]","start":1677262694339,"end":1677262694367,"title":"example\/userSearchDefaultSettings[3:78] 15:18:14.339-15:18:14.367 Performance testing"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("004c2b6c-a1e9-4678-b456-c1d32418ed1f",{name:"Isabela"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>example.searchHECourses</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-02-24 03:15:22 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Verify the searchHeCourses query</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:39]"><span>[2:39]</span> <span>Authorization testing</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:74]"><span>[3:74]</span> <span>Performance testing</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">example/searchHECourses.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Verify the searchHeCourses query</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Verify the searchHeCourses query</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>319</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url postService</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:15:21.809 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-type = &#39;application/json; charset=UTF-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">query SearchHECourses {
+            searchHECourses(
+                filter: {
+                    officeId: 3171
+                }       
+        ) {
+        metadata {
+            size
+            total
+        }
+    
+    
+        records {
+            course {
+                id
+                name
+            }
+        }
+        }
+        }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;testAuthorization7&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">273</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">15:15:22.072 request:
+1 &gt; POST http://localhost:3100/graphql
+1 &gt; Content-type: application/json; charset=UTF-8
+1 &gt; Authorization: testAuthorization7
+1 &gt; Content-Length: 378
+1 &gt; Host: localhost:3100
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query SearchHECourses {\n            searchHECourses(\n                filter: {\n                    officeId: 3171\n                }       \n        ) {\n        metadata {\n            size\n            total\n        }\n    \n    \n        records {\n            course {\n                id\n                name\n            }\n        }\n        }\n        }&quot;}
+
+15:15:22.136 response time in milliseconds: 62
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1858
+1 &lt; ETag: W/&quot;742-k+eYIHeJ84ohK/09DP49VVOvMdE&quot;
+1 &lt; Date: Fri, 24 Feb 2023 18:15:22 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;data&quot;:{&quot;searchHECourses&quot;:{&quot;metadata&quot;:{&quot;size&quot;:20,&quot;total&quot;:729},&quot;records&quot;:[{&quot;course&quot;:{&quot;id&quot;:&quot;1402220&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402230&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402224&quot;,&quot;name&quot;:&quot;BSB50120 Diploma of Business (Organisational Development)&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402225&quot;,&quot;name&quot;:&quot;BSB60420 Advanced Diploma of Leadership and Management&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402226&quot;,&quot;name&quot;:&quot;10904NAT Diploma of Social Media Marketing&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402216&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support + CHC43015 Certificate IV in Ageing Support Package&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402228&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support + CHC43015 Certificate IV in Ageing Support Package&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402221&quot;,&quot;name&quot;:&quot;CHC30121 Certificate III in Early Childhood Education and Care&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402222&quot;,&quot;name&quot;:&quot;CHC50121 Diploma of Early Childhood Education and Care&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402231&quot;,&quot;name&quot;:&quot;CHC30121 Certificate III in Early Childhood Education and Care&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1162160&quot;,&quot;name&quot;:&quot;Certificate in Real Estate Property (CS)&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412781&quot;,&quot;name&quot;:&quot;Gerontology - Interprofessional Practice&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412775&quot;,&quot;name&quot;:&quot;Addictions and Mental Health&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;696861&quot;,&quot;name&quot;:&quot;BUSINESS MANAGEMENT&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;696865&quot;,&quot;name&quot;:&quot;PROJECT MANAGEMENT&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412778&quot;,&quot;name&quot;:&quot;MARKETING MANAGEMENT&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412783&quot;,&quot;name&quot;:&quot;SUPPLY CHAIN MANAGEMENT - GLOBAL&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;754335&quot;,&quot;name&quot;:&quot;HUMAN RESOURCES MANAGEMENT (CO-OP)&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1337540&quot;,&quot;name&quot;:&quot;KAPLAN Foundation for BA (Hons) Animation - Progression to: University of Westminster&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1337546&quot;,&quot;name&quot;:&quot;KAPLAN Foundation for BA (Hons) Architecture - Progression to: University of Westminster&quot;}}]}}}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { data: &#39;#notnull&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:39]</span>
+                <span class="scenario-name">Authorization testing</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>30</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url postService</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:15:22.161 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-type = &#39;application/json; charset=UTF-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.41">query SearchHECourses {
+            searchHECourses(
+                filter: {
+                    officeId: 3030
+                }       
+        ) {
+        metadata {
+            size
+            total
+        }
+        records {
+            course {
+                id
+                name
+            }
+        }
+        }
+        }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;testAuthorization7&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.68">15:15:22.164 request:
+1 &gt; POST http://localhost:3100/graphql
+1 &gt; Content-type: application/json; charset=UTF-8
+1 &gt; Authorization: testAuthorization7
+1 &gt; Content-Length: 366
+1 &gt; Host: localhost:3100
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query SearchHECourses {\n            searchHECourses(\n                filter: {\n                    officeId: 3030\n                }       \n        ) {\n        metadata {\n            size\n            total\n        }\n        records {\n            course {\n                id\n                name\n            }\n        }\n        }\n        }&quot;}
+
+15:15:22.182 response time in milliseconds: 18
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1411
+1 &lt; ETag: W/&quot;583-U8nBsEg+PiwqQPlbjzye/7A2Yxk&quot;
+1 &lt; Date: Fri, 24 Feb 2023 18:15:22 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;You do not have access to officeId 3030&quot;,&quot;extensions&quot;:{&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;response&quot;:{&quot;statusCode&quot;:403,&quot;message&quot;:&quot;You do not have access to officeId 3030&quot;,&quot;error&quot;:&quot;Forbidden&quot;},&quot;serviceName&quot;:&quot;search&quot;,&quot;exception&quot;:{&quot;message&quot;:&quot;You do not have access to officeId 3030&quot;,&quot;stacktrace&quot;:[&quot;GraphQLError: You do not have access to officeId 3030&quot;,&quot;    at downstreamServiceError (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:622:12)&quot;,&quot;    at /app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:432:9&quot;,&quot;    at Array.map (&lt;anonymous&gt;)&quot;,&quot;    at sendOperation (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:431:38)&quot;,&quot;    at processTicksAndRejections (node:internal/process/task_queues:96:5)&quot;,&quot;    at /app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:301:41&quot;,&quot;    at executeNode (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:239:9)&quot;,&quot;    at executeNode (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:191:32)&quot;,&quot;    at /app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:80:27&quot;,&quot;    at /app/node_modules/@apollo/gateway/src/index.ts:823:28&quot;,&quot;    at execute (/app/node_modules/apollo-server-core/src/requestPipeline.ts:498:14)&quot;,&quot;    at processGraphQLRequest (/app/node_modules/apollo-server-core/src/requestPipeline.ts:406:22)&quot;,&quot;    at processHTTPRequest (/app/node_modules/apollo-server-core/src/runHttpQuery.ts:433:24)&quot;]}}}],&quot;data&quot;:null}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response.errors[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.70">15:15:22.189 [print] {
+  &quot;message&quot;: &quot;You do not have access to officeId 3030&quot;,
+  &quot;extensions&quot;: {
+    &quot;code&quot;: &quot;FORBIDDEN&quot;,
+    &quot;response&quot;: {
+      &quot;statusCode&quot;: 403,
+      &quot;message&quot;: &quot;You do not have access to officeId 3030&quot;,
+      &quot;error&quot;: &quot;Forbidden&quot;
+    },
+    &quot;serviceName&quot;: &quot;search&quot;,
+    &quot;exception&quot;: {
+      &quot;message&quot;: &quot;You do not have access to officeId 3030&quot;,
+      &quot;stacktrace&quot;: [
+        &quot;GraphQLError: You do not have access to officeId 3030&quot;,
+        &quot;    at downstreamServiceError (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:622:12)&quot;,
+        &quot;    at /app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:432:9&quot;,
+        &quot;    at Array.map (&lt;anonymous&gt;)&quot;,
+        &quot;    at sendOperation (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:431:38)&quot;,
+        &quot;    at processTicksAndRejections (node:internal/process/task_queues:96:5)&quot;,
+        &quot;    at /app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:301:41&quot;,
+        &quot;    at executeNode (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:239:9)&quot;,
+        &quot;    at executeNode (/app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:191:32)&quot;,
+        &quot;    at /app/node_modules/@apollo/gateway/src/executeQueryPlan.ts:80:27&quot;,
+        &quot;    at /app/node_modules/@apollo/gateway/src/index.ts:823:28&quot;,
+        &quot;    at execute (/app/node_modules/apollo-server-core/src/requestPipeline.ts:498:14)&quot;,
+        &quot;    at processGraphQLRequest (/app/node_modules/apollo-server-core/src/requestPipeline.ts:406:22)&quot;,
+        &quot;    at processHTTPRequest (/app/node_modules/apollo-server-core/src/runHttpQuery.ts:433:24)&quot;
+      ]
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.errors[0] contains { message: &quot;You do not have access to officeId 3030&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:74]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:74]</span>
+                <span class="scenario-name">Performance testing</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>53</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:74]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url postService</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">15:15:22.200 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-type = &#39;application/json; charset=UTF-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.76">query SearchHECourses {
+            searchHECourses(
+                filter: {
+                    officeId: 3171
+                }       
+        ) {
+        metadata {
+            size
+            total
+        }
+        records {
+            course {
+                id
+                name
+            }
+        }
+        }
+        }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;testAuthorization7&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.103">15:15:22.204 request:
+1 &gt; POST http://localhost:3100/graphql
+1 &gt; Content-type: application/json; charset=UTF-8
+1 &gt; Authorization: testAuthorization7
+1 &gt; Content-Length: 366
+1 &gt; Host: localhost:3100
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;query SearchHECourses {\n            searchHECourses(\n                filter: {\n                    officeId: 3171\n                }       \n        ) {\n        metadata {\n            size\n            total\n        }\n        records {\n            course {\n                id\n                name\n            }\n        }\n        }\n        }&quot;}
+
+15:15:22.246 response time in milliseconds: 42
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1858
+1 &lt; ETag: W/&quot;742-k+eYIHeJ84ohK/09DP49VVOvMdE&quot;
+1 &lt; Date: Fri, 24 Feb 2023 18:15:22 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;data&quot;:{&quot;searchHECourses&quot;:{&quot;metadata&quot;:{&quot;size&quot;:20,&quot;total&quot;:729},&quot;records&quot;:[{&quot;course&quot;:{&quot;id&quot;:&quot;1402220&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402230&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402224&quot;,&quot;name&quot;:&quot;BSB50120 Diploma of Business (Organisational Development)&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402225&quot;,&quot;name&quot;:&quot;BSB60420 Advanced Diploma of Leadership and Management&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402226&quot;,&quot;name&quot;:&quot;10904NAT Diploma of Social Media Marketing&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402216&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support + CHC43015 Certificate IV in Ageing Support Package&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402228&quot;,&quot;name&quot;:&quot;CHC33015 Certificate III in Individual Support + CHC43015 Certificate IV in Ageing Support Package&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402221&quot;,&quot;name&quot;:&quot;CHC30121 Certificate III in Early Childhood Education and Care&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402222&quot;,&quot;name&quot;:&quot;CHC50121 Diploma of Early Childhood Education and Care&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1402231&quot;,&quot;name&quot;:&quot;CHC30121 Certificate III in Early Childhood Education and Care&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1162160&quot;,&quot;name&quot;:&quot;Certificate in Real Estate Property (CS)&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412781&quot;,&quot;name&quot;:&quot;Gerontology - Interprofessional Practice&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412775&quot;,&quot;name&quot;:&quot;Addictions and Mental Health&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;696861&quot;,&quot;name&quot;:&quot;BUSINESS MANAGEMENT&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;696865&quot;,&quot;name&quot;:&quot;PROJECT MANAGEMENT&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412778&quot;,&quot;name&quot;:&quot;MARKETING MANAGEMENT&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1412783&quot;,&quot;name&quot;:&quot;SUPPLY CHAIN MANAGEMENT - GLOBAL&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;754335&quot;,&quot;name&quot;:&quot;HUMAN RESOURCES MANAGEMENT (CO-OP)&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1337540&quot;,&quot;name&quot;:&quot;KAPLAN Foundation for BA (Hons) Animation - Progression to: University of Westminster&quot;}},{&quot;course&quot;:{&quot;id&quot;:&quot;1337546&quot;,&quot;name&quot;:&quot;KAPLAN Foundation for BA (Hons) Architecture - Progression to: University of Westminster&quot;}}]}}}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response == { data: &#39;#notnull&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.106">15:15:22.252 [print] 42 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &lt; 100</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

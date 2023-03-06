@@ -1,0 +1,2 @@
+15:24:26.478 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+15:24:26.704 [main]  ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: src/test/java/example/searchHECourses.feature - mismatched input 'i' expecting <EOF>

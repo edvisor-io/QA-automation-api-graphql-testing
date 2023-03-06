@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"example\/searchHECourses[1:6]","start":1676662314923,"end":1676662320104,"title":"example\/searchHECourses[1:6] 16:31:54.923-16:32:00.104 Verify the searchHeCourses query"},{"id":2,"group":1,"content":"example\/searchHECourses[2:40]","start":1676662320112,"end":1676662320228,"title":"example\/searchHECourses[2:40] 16:32:00.112-16:32:00.228 Authorization testing"},{"id":3,"group":1,"content":"example\/searchHECourses[3:76]","start":1676662320237,"end":1676662320312,"title":"example\/searchHECourses[3:76] 16:32:00.237-16:32:00.312 Performance testing"},{"id":4,"group":1,"content":"example\/searchHSCourses[1:6]","start":1676662320974,"end":1676662321252,"title":"example\/searchHSCourses[1:6] 16:32:00.974-16:32:01.252 Verify the searchHSCourses query"},{"id":5,"group":1,"content":"example\/searchHSCourses[2:48]","start":1676662321258,"end":1676662321315,"title":"example\/searchHSCourses[2:48] 16:32:01.258-16:32:01.315 Authorization testing"},{"id":6,"group":1,"content":"example\/searchHSCourses[3:90]","start":1676662321320,"end":1676662321380,"title":"example\/searchHSCourses[3:90] 16:32:01.320-16:32:01.380 Performance testing"},{"id":7,"group":1,"content":"example\/searchInsurance[1:7]","start":1676662321614,"end":1676662322628,"title":"example\/searchInsurance[1:7] 16:32:01.614-16:32:02.628 Verify the searchInsurance query"},{"id":8,"group":1,"content":"example\/searchInsurance[2:40]","start":1676662322634,"end":1676662322676,"title":"example\/searchInsurance[2:40] 16:32:02.634-16:32:02.676 Authorization testing"},{"id":9,"group":1,"content":"example\/searchInsurance[3:74]","start":1676662322680,"end":1676662322716,"title":"example\/searchInsurance[3:74] 16:32:02.680-16:32:02.716 Performance testing"},{"id":10,"group":1,"content":"example\/searchJuniorCourses[1:6]","start":1676662322925,"end":1676662323707,"title":"example\/searchJuniorCourses[1:6] 16:32:02.925-16:32:03.707 Verify the searchHeCourses query"},{"id":11,"group":1,"content":"example\/searchJuniorCourses[2:42]","start":1676662323711,"end":1676662323744,"title":"example\/searchJuniorCourses[2:42] 16:32:03.711-16:32:03.744 Authorization testing"},{"id":12,"group":1,"content":"example\/searchJuniorCourses[3:79]","start":1676662323748,"end":1676662323784,"title":"example\/searchJuniorCourses[3:79] 16:32:03.748-16:32:03.784 Performance testing"},{"id":13,"group":1,"content":"example\/searchLanguageCourses[1:3]","start":1676662323877,"end":1676662323958,"title":"example\/searchLanguageCourses[1:3] 16:32:03.877-16:32:03.958 Verify the searchLanguageCourses query"},{"id":14,"group":1,"content":"example\/searchLanguageCourses[2:41]","start":1676662323962,"end":1676662323999,"title":"example\/searchLanguageCourses[2:41] 16:32:03.962-16:32:03.999 Authorization testing"},{"id":15,"group":1,"content":"example\/searchLanguageCourses[3:81]","start":1676662324003,"end":1676662324062,"title":"example\/searchLanguageCourses[3:81] 16:32:04.003-16:32:04.062 Performance testing"},{"id":16,"group":1,"content":"example\/userSearchDefaultSettings[1:6]","start":1676662324204,"end":1676662324277,"title":"example\/userSearchDefaultSettings[1:6] 16:32:04.204-16:32:04.277 Verify the userSearchDefaultSettings query"},{"id":17,"group":1,"content":"example\/userSearchDefaultSettings[2:42]","start":1676662324281,"end":1676662324357,"title":"example\/userSearchDefaultSettings[2:42] 16:32:04.281-16:32:04.357 Authorization testing"},{"id":18,"group":1,"content":"example\/userSearchDefaultSettings[3:78]","start":1676662324361,"end":1676662324404,"title":"example\/userSearchDefaultSettings[3:78] 16:32:04.361-16:32:04.404 Performance testing"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
