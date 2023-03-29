@@ -3,7 +3,7 @@ Feature: Verify the searchHeCourses query
 Background: Initialize stuff
     Given url postService
 
-Scenario Outline: Verify the searchHeCourses query
+Scenario: Verify the searchHeCourses query
     And header Content-type = 'application/json; charset=UTF-8'
     And text query = 
     """
@@ -31,15 +31,11 @@ Scenario Outline: Verify the searchHeCourses query
     
     """
     And request { query: '#(query)' }
-    And header Authorization = <Authorization>    
+    And header Authorization = token
     When method post
     Then status 200
+    And print response
     And match response == { data: '#notnull'}
-
-    Examples:
-        | Authorization |  
-        | 'testAuthorization7' |
-        | '1vPx1nSwDjZyCUynzbX1DPOPgAlhJUcHCkyyvkDjMy0l1LB1D1T4DZyl20sx1hO8' |
    
 Scenario: Authorization testing
     And header Content-type = 'application/json; charset=UTF-8'
@@ -69,7 +65,7 @@ Scenario: Authorization testing
     
     """
     And request { query: '#(query)' }
-    And header Authorization = 'testAuthorization7'
+    And header Authorization = token
     When method post
     Then status 200
     And print response.errors[0]
@@ -104,7 +100,7 @@ Scenario: Performance testing
     
     """
     And request { query: '#(query)' }
-    And header Authorization = 'testAuthorization7'
+    And header Authorization = token
     When method post
     Then status 200
     And match response == { data: '#notnull'}
