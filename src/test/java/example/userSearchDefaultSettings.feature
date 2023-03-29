@@ -32,7 +32,7 @@ Scenario: Verify the userSearchDefaultSettings query
     
     """
     And request { query: '#(query)' }
-    And header Authorization = 'testAuthorization7'
+    And header Authorization = token
     When method post
     Then status 200
     And match response == { data: '#notnull'}
@@ -68,7 +68,7 @@ Scenario: Authorization testing
     
     """
     And request { query: '#(query)' }
-    And header Authorization = 'testAuthorization7'
+    And header Authorization = token
     When method post
     Then status 200
     And print response.errors[0]
@@ -104,7 +104,7 @@ Scenario: Performance testing
     
     """
     And request { query: '#(query)' }
-    And header Authorization = 'testAuthorization7'
+    And header Authorization = token
     When method post
     Then status 200
     And match response == { data: '#notnull'}
